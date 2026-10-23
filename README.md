@@ -2,9 +2,9 @@
 
 [打开 GitHub Pages 看板](https://hupopeye8-hc.github.io/communication-cost-dashboard/)
 
-[打开原 Sites 看板](https://communication-cost-dashboard.hupopeye8.chatgpt.site/)
-
 与“策略执行监控”采用相同的静态 GitHub Pages 发布方式。
+
+每日北京时间 12:10 从指定数据文件夹读取最新数据，刷新完成后发布到本 GitHub Pages 地址。报表数据更新时间显示实际刷新完成时间。
 
 数据更新：2026-10-23 14:33:55（北京时间，数据刷新实际完成时间）。数据覆盖 2026 年 1–10 月、中国、印尼、墨西哥、巴基斯坦、泰国、菲律宾。
 
