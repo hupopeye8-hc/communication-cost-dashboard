@@ -201,7 +201,7 @@ function toolPrice(country,page,month=priceMonth,currency=priceCurrency){
  const qty=sum(valid.map(r=>r.qty));
  return {value:qty?sum(valid.map(r=>r.cost/fxRate(r.month,target)))/qty:null,currency:target,qty,omitted:all.filter(r=>r.show_price&&(r.qty<=0||r.qty_missing)).length};
 }
-function matrixNumber(value){if(value==null||!Number.isFinite(value))return '—';return value.toLocaleString('zh-CN',{minimumFractionDigits:3,maximumFractionDigits:3})}
+function matrixNumber(value){if(value==null||!Number.isFinite(value))return '—';return value.toLocaleString('zh-CN',{minimumFractionDigits:4,maximumFractionDigits:4})}
 function renderPriceMatrix(){
  const monthLabel=priceMonth==="all"?`${REPORT.months[0]} 至 ${REPORT.months.at(-1)}（全部月份）`:priceMonth+(priceMonth===REPORT.months.at(-1)?'（全月预估）':'');
  document.getElementById('matrixContext').textContent=monthLabel+' · '+(priceCurrency==='local'?'本币（各国当地货币）':priceCurrency)+' / 标准量';
